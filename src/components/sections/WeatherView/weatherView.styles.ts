@@ -30,6 +30,12 @@ const StyledWeatherTemperature = styled.div`
   margin-left: 10px;
 `
 
+const StyledWeatherDescription = styled.div`
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: ${({ theme: { Color } }) => Color.ACCENT};
+`
+
 export {
   StyledWeatherFeatureWrapper,
   StyledWeatherFeatureDetail,
@@ -37,4 +43,5 @@ export {
   StyledWeatherFeatureTitle,
   StyledWeatherCondition,
   StyledWeatherTemperature,
+  StyledWeatherDescription,
 }

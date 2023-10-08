@@ -9,6 +9,7 @@ import {
   StyledWeatherFeatureTitle,
   StyledWeatherCondition,
   StyledWeatherTemperature,
+  StyledWeatherDescription,
 } from 'components/sections/WeatherView/weatherView.styles'
 import { getWeatherIconUrl } from 'src/services/openWeather'
 import { transformWeatherData } from 'src/utils/mappers/mapWeatherFeature'
@@ -32,7 +33,7 @@ function WeatherView({ weatherData }: WeatherViewProps) {
               alt={weatherData.weather.main}
               loading="lazy"
             />
-            <h1>{weatherData.weather.description}</h1>
+            <StyledWeatherDescription>{weatherData.weather.description}</StyledWeatherDescription>
           </StyledWeatherCondition>
           <StyledWeatherTemperature>
             {weatherData.weather.temp} °c
@@ -47,8 +48,6 @@ function WeatherView({ weatherData }: WeatherViewProps) {
     </Row>
   )
 }
-// todo: change h1 to style component
-// Todo: might need to be transfer to a new file
 interface WeatherFeatherProps {
   iconName?: string
   title?: string
