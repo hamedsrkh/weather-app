@@ -18,6 +18,7 @@ declare module 'styled-components' {
       OVERLAY_DARK: string
       OVERLAY_MEDIUM: string
       OVERLAY_LIGHT: string
+      OVERLAY_ERROR: string
     }
     Layout: {
       BREAKPOINT: TBreakPoints

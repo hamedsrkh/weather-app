@@ -15,6 +15,7 @@ import { mapSelectInputData } from 'src/utils/mappers/mapSelectInputData'
 import { setCookie } from 'cookies-next'
 import { CITY_COOKIE_KEY } from 'src/const/global'
 import { transformWeatherData } from 'src/utils/mappers/mapWeatherFeature'
+import { Alert } from 'components/global/Alert'
 
 function Home({
   cities,
@@ -55,12 +56,11 @@ function Home({
         {!error ? (
           <WeatherView weatherData={weatherData || initialWeatherData} />
         ) : (
-          <p>Server Error: please try again later</p>
+          <Alert>Server Error: please try again later</Alert>
         )}
       </Container>
     </>
   )
-  // todo: create the error show component
 }
 export default Home
 
