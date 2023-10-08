@@ -14,4 +14,7 @@ export const StyledIcon = styled.span<ISpanProps>`
   color: ${({ $color }) => $color};
   line-height: 1;
   transition: all 250ms ease;
+  & svg {
+    width: 100%;
+  }
 `
