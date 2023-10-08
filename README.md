@@ -1,6 +1,6 @@
 ## Description 📋
 
-This assignment involves creating a web application that provides information about Weather condition using technologies such as Nextjs, Styled-component, TypeScript, and more. The application allows users to view weather specific data for their how city and some other cities around the world.
+This assignment involves creating a web application that provides information about weather conditions using technologies such as Next.js, Styled-components, TypeScript, and more. The application allows users to view weather-specific data for their own cities and some other cities around the world. For fetching the weather data, I utilized the https://openweathermap.org/ API, and to determine the user's city, I integrated the API from https://ipstack.com. You can check out the final implementation of this app on this URL hosted on Vercel.
 
 You can check out the final implementation of this app on this URL hosted on Vercel.
 
